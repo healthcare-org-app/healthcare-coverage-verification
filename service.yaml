@@ -1,0 +1,11 @@
+name: coverage-verification-service
+port: 8802
+lang: python
+description: "coverage-verification-service \u2014 domain: insurance"
+http_deps:
+- eligibility-service
+- patients-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
